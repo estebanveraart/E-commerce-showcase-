@@ -1,0 +1,162 @@
+body{
+    padding-top: 1px;
+    background-image: repeating-linear-gradient(
+    135deg, rgba(189,189,189,0.1) 0px, rgba(189,189,189,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(
+    90deg, rgb(255,255,255),rgb(255,255,255));
+    font-family: Roboto, sans-serif;
+}
+
+.produitCart{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: absolute;
+    transform: translate(10px, -10px);
+    border: 5px solid #333;
+    border-radius: 5px;
+    transition: transform 0.2s ease-out;
+    color: rgb(22, 22, 22);
+    background-color: white;
+}
+
+.produitCartBack{
+    display: block;
+    width: 100%;
+    height: 102%;
+    background: #333;
+    border-radius: 5px;
+    position: absolute;
+    z-index: -2;
+}
+
+header{
+   width: 100%;
+}
+
+aside{
+    display: flex;
+    width: 99vw;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+
+.shop, .utilisateur{
+    width: 40px;
+    height: 40px;
+}
+
+.shop{
+    margin-right: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95vw;
+    height: 80vh;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+article{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 30px;
+    margin-bottom: 70px;
+}
+
+.VisuelCase{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPiece{
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #333;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(19, 19, 19, 0.2);
+    margin-top: 30px;
+    width: 99vw;
+    color: white;
+    font-size: 15px;
+}
+
+.back{
+
+    color: red;
+    text-align: end;
+
+}
+
+.articleS{
+
+    width: 95vw;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.titreP{
+
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.texteP {
+
+    font-size: 20px;
+
+}
+
+.imgP{
+
+    width: 400px;
+    border: #333 solid 2px;
+
+}
+
+.achatsection{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@media (max-width: 700px) {
+
+    nav{
+        font-size: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #333;
+        border-radius: 3px;
+        box-shadow: 0 10px 20px rgba(19, 19, 19, 0.2);
+        margin-top: 30px;
+        width: 99vw;
+        color: white;
+    }
+
+    .imgP{
+
+        width: 300px;
+
+    }
+
+}
